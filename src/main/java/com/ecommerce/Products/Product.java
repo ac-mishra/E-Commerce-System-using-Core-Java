@@ -152,16 +152,38 @@ public abstract class Product {
      */
     public void displayProductInfo() {
 
-        System.out.println("-----------------------------------");
-        System.out.println("Product ID      : " + productId);
-        System.out.println(
-                "Category        : "
-                        + getCategory());
-        System.out.println("Product Name    : " + productName);
-        System.out.println("Price           : ₹" + price);
-        System.out.println("Discount        : " + calculateDiscount() + "%");
-        System.out.println("Final Price     : ₹" + getDiscountedPrice());
-        System.out.println("Stock Available : " + stockQuantity);
-        System.out.println("-----------------------------------");
+        System.out.println("----------------------------------------");
+
+        System.out.printf(
+                "%-18s : %d%n",
+                "Product ID",
+                productId);
+
+        System.out.printf(
+                "%-18s : %s%n",
+                "Product Name",
+                productName);
+
+        System.out.printf(
+                "%-18s : ₹%.2f%n",
+                "Price",
+                price);
+
+        System.out.printf(
+                "%-18s : %.0f%%%n",
+                "Discount",
+                calculateDiscount());
+
+        System.out.printf(
+                "%-18s : ₹%.2f%n",
+                "Final Price",
+                getDiscountedPrice());
+
+        System.out.printf(
+                "%-18s : %d%n",
+                "Stock Available",
+                stockQuantity);
+
+        System.out.println("----------------------------------------");
     }
 }

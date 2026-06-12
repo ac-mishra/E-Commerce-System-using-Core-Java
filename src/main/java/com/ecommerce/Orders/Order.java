@@ -86,7 +86,7 @@ public class Order {
     public void displayOrderSummary() {
 
         System.out.println("\n==================================");
-        System.out.println("ORDER SUMMARY");
+        System.out.println("📦 ORDER SUMMARY");
         System.out.println("==================================");
 
         System.out.println("Order ID : " + orderId);
@@ -116,7 +116,13 @@ public class Order {
 
         System.out.println("\nSubtotal : ₹" + subtotal);
         System.out.println("GST (18%) : ₹" + gstAmount);
-        System.out.println("Final Amount : ₹" + finalAmount);
+        System.out.printf(
+                "Final Amount : ₹%.2f%n",
+                finalAmount);
+
+        System.out.println("\n🎉 ORDER CONFIRMED!");
+        System.out.println("Status : Processing");
+        System.out.println("Estimated Delivery : 5-7 Days");
 
         System.out.println("==================================");
     }

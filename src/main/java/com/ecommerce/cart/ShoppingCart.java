@@ -71,45 +71,42 @@ public class ShoppingCart {
 
         if (cartItems.isEmpty()) {
 
-            System.out.println(
-                    "\nCart is empty.");
+            System.out.println("\nCart is empty.");
             return;
         }
 
-        System.out.println("\n===== CART ITEMS =====");
+        System.out.println("\n===== SHOPPING CART =====");
+
+        System.out.printf(
+                "%-10s %-25s %-12s %-10s %-12s%n",
+                "ID",
+                "Product Name",
+                "Price",
+                "Qty",
+                "Total");
+
+        System.out.println(
+                "--------------------------------------------------------------------------");
 
         for (CartItem item : cartItems) {
 
-            Product product =
-                    item.getProduct();
+            Product product = item.getProduct();
 
-            System.out.println(
-                    "ID: " +
-                            product.getProductId());
-
-            System.out.println(
-                    "Name: " +
-                            product.getProductName());
-
-            System.out.println(
-                    "Price: ₹" +
-                            product.getDiscountedPrice());
-
-            System.out.println(
-                    "Quantity: " +
-                            item.getQuantity());
-
-            System.out.println(
-                    "Subtotal: ₹" +
-                            item.getSubtotal());
-
-            System.out.println(
-                    "---------------------");
+            System.out.printf(
+                    "%-10d %-25s ₹%-11.2f %-10d ₹%-11.2f%n",
+                    product.getProductId(),
+                    product.getProductName(),
+                    product.getDiscountedPrice(),
+                    item.getQuantity(),
+                    item.getSubtotal());
         }
 
         System.out.println(
-                "Cart Total: ₹"
-                        + calculateCartTotal());
+                "--------------------------------------------------------------------------");
+
+        System.out.printf(
+                "Cart Total : ₹%.2f%n",
+                calculateCartTotal());
     }
 
     /**
