@@ -1,4 +1,4 @@
-package com.ecommerce.Products;
+package com.ecommerce.products;
 
 /**
  * Represents an electronics product.

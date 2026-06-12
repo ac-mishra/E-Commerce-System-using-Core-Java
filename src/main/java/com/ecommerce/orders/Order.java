@@ -1,7 +1,7 @@
-package com.ecommerce.Orders;
+package com.ecommerce.orders;
 
 import com.ecommerce.cart.CartItem;
-import com.ecommerce.Cusomers.Customer;
+import com.ecommerce.customers.Customer;
 
 import java.time.LocalDateTime;
 import java.util.List;

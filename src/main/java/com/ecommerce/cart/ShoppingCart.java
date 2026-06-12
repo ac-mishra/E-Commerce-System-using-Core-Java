@@ -3,7 +3,7 @@ package com.ecommerce.cart;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.ecommerce.Products.Product;
+import com.ecommerce.products.Product;
 
 /**
  * Represents customer's shopping cart.

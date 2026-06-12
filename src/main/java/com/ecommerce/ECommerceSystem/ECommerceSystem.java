@@ -1,13 +1,13 @@
 package com.ecommerce.ECommerceSystem;
 
-import com.ecommerce.Orders.Order;
-import com.ecommerce.Orders.OrderManager;
-import com.ecommerce.Products.BookProduct;
-import com.ecommerce.Products.ClothingProduct;
-import com.ecommerce.Products.ElectronicsProduct;
-import com.ecommerce.Products.Product;
+import com.ecommerce.orders.Order;
+import com.ecommerce.orders.OrderManager;
+import com.ecommerce.products.BookProduct;
+import com.ecommerce.products.ClothingProduct;
+import com.ecommerce.products.ElectronicsProduct;
+import com.ecommerce.products.Product;
 import com.ecommerce.cart.ShoppingCart;
-import com.ecommerce.Cusomers.Customer;
+import com.ecommerce.customers.Customer;
 
 import java.util.ArrayList;
 import java.util.List;

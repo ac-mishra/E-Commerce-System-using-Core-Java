@@ -1,4 +1,4 @@
-package com.ecommerce.Cusomers;
+package com.ecommerce.customers;
 
 /**
  * Represents a customer in the E-Commerce System.

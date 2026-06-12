@@ -1,6 +1,6 @@
 package com.ecommerce.cart;
 
-import com.ecommerce.Products.Product;
+import com.ecommerce.products.Product;
 
 /**
  * Represents an item inside the shopping cart.
